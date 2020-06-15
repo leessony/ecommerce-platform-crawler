@@ -1,18 +1,21 @@
-from selenium import webdriver
-import time
-from bs4 import BeautifulSoup
-
 from naver import Naver
+from taobao import Taobao
 
-n = Naver()
-
-login = {
+naver_login = {
     "id": "",
     "pw": ""
 }
-
-n.login(login.get("id"), login.get("pw"))
+n = Naver()
+n.login(naver_login.get("id"), naver_login.get("pw"))
 products = n.get_products()
 
 for p in products:
     print(p.text)
+
+
+# taobao_login = {
+#     "id": "",
+#     "pw": ""
+# }
+# t = Taobao()
+# t.login(taobao_login.get("id"), taobao_login.get("pw"))
