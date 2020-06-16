@@ -33,7 +33,7 @@ class Naver:
 
     def get_products(self):
         # 판매중 상품 버튼 클릭
-        time.sleep(9)
+        time.sleep(12)
         self.tools.get_driver.get(self.__PRODUCT_MANAGE_URL)
         self.tools.get_driver.find_element_by_xpath(
             self.__PRODUCT_ON_SALE_LIST_BTN_XPATH

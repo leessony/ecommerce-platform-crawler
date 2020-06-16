@@ -21,3 +21,4 @@ http-client.env.json
 *.db
 *.log
 venv/
+__pycache__/
